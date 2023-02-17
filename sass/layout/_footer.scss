@@ -1,0 +1,109 @@
+footer{
+  background: #F9F4E2;
+  background-image: url(/images/footer.bg.png);
+  height: 120px;
+.bottim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  .bottim_left {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    img{
+      object-fit: contain;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        padding-left: 30px;
+        a {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 150%;
+          color: #414141;
+        }
+      }
+    }
+    @media screen and (max-width: 968px) {
+         ul{
+          flex-wrap: wrap;
+          padding-right: 50px;
+         } 
+   }
+  }
+  .bottim_right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .ul_right {
+      display: flex;
+      padding-bottom: 20px;
+      li {
+        padding-right: 35px;
+        a{
+           font-size: 22px;
+        }
+      }
+    }
+    @media screen and (max-width: 968px) {
+         .ul_right{
+          flex-wrap: wrap;
+         } 
+   }
+  }
+}
+@media screen and (max-width: 900px) {
+  .bottim{
+    flex-wrap: wrap;
+  }
+}
+
+.bottom_menu{
+  z-index: 2;
+  display: none;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  bottom: 0px;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+      text-align: center;
+      padding-top: 20px;
+       a {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #414141;
+          span{
+            font-size: 16px;
+          }
+        }
+        a:hover{
+          color: blue;
+        }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .bottom_menu{
+    display: block;
+  }
+}
+}
+@media screen and (max-width: 900px) {
+  footer{
+    height: 200px;
+  }
+}
+

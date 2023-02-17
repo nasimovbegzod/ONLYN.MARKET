@@ -1,0 +1,160 @@
+nav {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    .nav-left {
+      display: flex;
+      align-items: center;
+      .img2 {
+        display: none;
+      }
+      .menu_btn {
+        margin-left: 40px;
+      }
+      @media screen and (max-width: 900px) {
+        .menu_btn {
+          display: none;
+        }
+      }
+      form {
+        input {
+          height: 40px;
+          width: 475px;
+          border: 1px solid #70c05b;
+          padding-left: 20px;
+          margin-left: 16px;
+        }
+      }
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      li {
+        text-align: center;
+        a {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #414141;
+        }
+        a:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1165px) {
+    .navbar {
+      .nav-left {
+        .menu_btn {
+          margin-left: 40px;
+          font-size: 0px;
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .navbar {
+      .nav-left {
+        form {
+          input {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .navbar {
+      .nav-right {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar {
+      .nav-left {
+        .img1 {
+          display: none;
+        }
+        .img2 {
+          display: block;
+        }
+        form {
+          input {
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+}
+  .on_of{
+    display: block !important;
+  }
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 100px;
+  height: 350px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  display: none;
+  .catalok_table {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      padding-top: 40px;
+      li {
+        padding-bottom: 24px;
+        a {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: #414141;
+        }
+        a:hover{
+          color: #FF6633;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .modal{
+    height: 600px;
+ .catalok_table{
+      flex-wrap: wrap;
+    }
+  }
+  };
+
+  @media screen and (max-width: 390px) {
+  .modal{
+    height: 900px;
+ .catalok_table{
+      flex-wrap: wrap;
+    }
+  }
+  }

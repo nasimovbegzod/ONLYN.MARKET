@@ -1,0 +1,61 @@
+//////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// //////
+//                       MENU BUTTON                       //
+//////////////////////////////////////////////////////////////
+
+.btn1{
+  background: #70C05B;
+border-radius: 4px;
+color: #ffffff;
+border: 1px solid #70C05B;
+padding: 10px 25px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+.btn1:hover{
+  background-color: #E5FFDE;
+  color: #70C05B;
+}
+
+.btn1:active{
+  background-color: #ffffff;
+}
+
+.btn2{
+background: #ffffff;
+color: #000000;
+border: 1px solid #ffffff;
+font-size: 20px;
+span{
+  font-size: 16px;
+}
+};
+
+.btn2:hover{
+  color:  #FF6633;
+}
+
+  //////////////////////////
+  /////////CARD BTN/////////
+     ////////////////////
+        //////////////            
+  
+    
+.card_btn{
+  background-color: #ffffff;
+  border: 2px solid #70C05B;
+  color: #70C05B;
+  padding: 10px 100px;
+}
+.card_btn:hover{
+  background-color: #E5FFDE;
+}
+.card_btn:active{
+  background-color: #FF6633;
+  border: none;
+  color: #ffffff;
+}
